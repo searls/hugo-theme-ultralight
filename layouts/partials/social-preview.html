@@ -1,4 +1,4 @@
-{{ $description := .Params.Description | default "A thing @searls wrote for you." }}
+{{ $description := .Params.Description | default (print "A thing " .Site.Author.name " made for you.") }}
 
 <!-- facebook -->
 <meta property="og:title" content="{{ .Params.Title }}">
