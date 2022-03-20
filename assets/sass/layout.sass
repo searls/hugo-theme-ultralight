@@ -95,21 +95,22 @@ nav
 
 .posts-list
   .post
-    margin-top: 44px
+    &:not(:first-child)
+      margin-top: 44px
 
     &:last-of-type
       hr
         display: none
 
+  time
+    display: block
+    text-align: center
+
   .title
+    margin: 16px auto 0 auto
     width: 90%
-    margin: 0 auto
     font-size: 1.25em
     font-weight: semibold
 
-  time
-    margin-top: 32px
-    display: block
-    text-align: center
 
 

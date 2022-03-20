@@ -1,12 +1,12 @@
 <div class="posts-list">
   {{ range .Pages.ByPublishDate.Reverse }}
   <div class="post">
-    <div class="title">
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </div>
     <time datetime="{{ .Date.Format "2006-01-02"}}">
       {{ .Date.Format "2006.01.02" }}
     </time>
+    <div class="title">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </div>
     <hr>
   </div>
   {{ end }}
